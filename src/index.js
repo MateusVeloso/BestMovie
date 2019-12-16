@@ -13,7 +13,7 @@ import './static/sass/style.scss';
 const createStoreWithMiddleware = applyMiddleware(promise)(createStore);
 
 const app = (
-   <Provider store={createStoreWithMiddleware(reducers)}>
+   <Provider store={ createStoreWithMiddleware(reducers) }>
       <BrowserRouter>
          <App />
       </BrowserRouter>
